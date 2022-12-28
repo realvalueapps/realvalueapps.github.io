@@ -40,6 +40,7 @@
             embedded
             gesture-detector
         >
+        <!--
             <a-assets>
                 <a-asset-item
                     id="animated-asset-dino"
@@ -84,6 +85,7 @@
                     gesture-handler
                 ></a-image>
             </a-marker>
+        -->
             <a-nft
               type="nft"
               url="assets/trex"
@@ -94,11 +96,10 @@
             >
               <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
               <a-entity
-              gltf-model='assets/scene.gltf'
-              scale="5 5 5"
-              position="150 300 -100"
-              >
-          </a-entity>
+                gltf-model='assets/scene.gltf'
+                scale="5 5 5"
+                position="150 300 -100"
+              ></a-entity>
             </a-nft>
 
             <a-entity camera></a-entity>
