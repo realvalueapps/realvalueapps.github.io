@@ -31,7 +31,7 @@
 
     <body style="margin: 0px; overflow: hidden;">
         <div class="arjs-loader">
-          <div>Cargando datos, espere...</div>
+          <div>Cargando, espere...</div>
         </div>
         <a-scene
             vr-mode-ui="enabled: false;"
@@ -47,6 +47,10 @@
                     id="animated-asset-dino"
                     src="assets/dino.gltf"
                 ></a-asset-item>
+                <img
+                  id="libreria"
+                  src="assets/libreria.jpg"
+                ></img>
             </a-assets>
 
             <a-marker
@@ -78,10 +82,9 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerLibreria"
             >
-                <a-entity 
-                    geometry="primitive:plane"
-                    material="shader:gif;src:url(assets/butterflies1.gif);transparent:true"
-                    gif=""></a-entity>
+                <a-image
+                  src="#libreria"
+                ></a-image>
             </a-marker>
 
             <a-nft
@@ -93,7 +96,6 @@
               smoothThreshold="5"
             >
               <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-              <!--
               <a-entity
                 gltf-model='assets/scene.gltf'
                 scale="5 5 5"
@@ -101,11 +103,6 @@
                 class="clickable"
                 gesture-handler
               ></a-entity>
-              -->
-              <a-entity 
-                    geometry="primitive:plane"
-                    material="shader:gif;src:url(assets/butterflies1.gif);transparent:true"
-                    gif=""></a-entity>
             </a-nft>
 
             <a-entity camera></a-entity>
