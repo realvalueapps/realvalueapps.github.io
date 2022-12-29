@@ -49,7 +49,7 @@
                 ></a-asset-item>
                 <a-asset-item
                     id="animated-asset-robot"
-                    src="assets/robot.glb"
+                    src="assets/robot.gltf"
                 ></a-asset-item>
                 <img
                   id="libreria"
@@ -67,18 +67,14 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerDino"
             >
-            <a-gltf-model src="#animated-asset-robot"></a-gltf-model>
-            <!--
                 <a-entity
                     id="bowser-model"
                     scale="5 5 5"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset-robot"
-                    animation-mixer
                     class="clickable"
                     gesture-handler
                 ></a-entity>
-            -->
             </a-marker>
             <a-marker
                 id="animated-libreria"
